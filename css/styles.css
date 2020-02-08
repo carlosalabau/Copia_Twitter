@@ -1,0 +1,141 @@
+body{
+    margin: 0;
+}
+#left{
+    background-color: rgb(113,201,248);
+    width: 50%;
+    height: 580px;
+    overflow: hidden;
+    margin: 0;
+    position: absolute;
+}
+#i_left{
+    color:rgb(29, 161, 242);
+   z-index: 0;
+}
+#i_left i{
+    position: absolute;
+    font-size: 1000px;
+    margin-top: -190px;
+}
+#p_left{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 99999;
+    position: relative;
+    min-height: 550px;
+}
+#p_left h3{
+    width: 320px;
+    margin-bottom: 40px;
+
+}
+#p_left div{
+    width: 290px;
+    margin-top: -20px;
+    margin-left: 35px;
+}
+#right{
+    width: 50%;
+    height: 550px;
+    float: right;
+}
+#login{
+  margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+#login input{
+    border: none;
+    border-bottom: 2px solid #333;
+    width: 220px;
+    height: 60px;
+    margin: 0 20px;
+    background:rgba(224, 225, 240, 0.59);
+}
+#login input::-webkit-input-placeholder{
+    color: rgb(139, 138, 138);
+}
+#content_right i{
+    font-size: 40px;
+}
+#content_right{
+    height:400px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 150px
+}
+#content_right p{
+    font-weight: bold;
+    margin-top: 60px;
+}
+#btn_blue{
+    background-color: rgb(29, 161, 242);
+    color: white;
+    border-radius: 20px;
+    width: 100%;
+    height: 40px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    border: none;
+}
+#btn_log{
+    border: rgb(29, 161, 242) 2px solid;
+    color: rgb(29, 161, 242);
+    background-color: white;
+    border-radius: 20px;
+    width: 100%;
+    height: 40px;
+    font-weight: bold;
+}
+#btn_inicio{
+        border: rgb(29, 161, 242) 2px solid;
+        color: rgb(29, 161, 242);
+        border-radius: 20px;
+        width: 120px;
+        background-color: white;
+        height: 40px;
+        font-weight: bold;
+        margin-top: 15px;
+}
+#right i{
+    color: rgb(29, 161, 242);
+}
+#links{
+  float: left;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#links ul{
+  text-decoration: none;
+
+}
+#links li{
+  display: inline;
+  padding: 0 4px;
+  font-size: 14px
+}
+#links li a{
+  color: #867f7f;
+  text-decoration: none;
+}
+#links li a:hover{
+  text-decoration: underline;
+}
+#copyright{
+  float: left;
+  color: #867f7f;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px
+}
