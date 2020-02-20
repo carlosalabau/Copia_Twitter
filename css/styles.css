@@ -1,19 +1,21 @@
 body{
     margin: 0;
 }
-#left{
-    background-color: rgb(113,201,248);
-    width: 50%;
-    height: 580px;
-    overflow: hidden;
-    margin: 0;
-    position: absolute;
+.container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
 }
-#i_left{
+.left{
+    background-color: rgb(64, 191, 223);
+    overflow: hidden;
+    position: relative;
+}
+.i_left{
     color:rgb(29, 161, 242);
    z-index: 0;
 }
-#i_left i{
+.i_left i{
     position: absolute;
     font-size: 1000px;
     margin-top: -190px;
@@ -38,13 +40,8 @@ body{
     margin-top: -20px;
     margin-left: 35px;
 }
-#right{
-    width: 50%;
-    height: 550px;
-    float: right;
-}
 #login{
-  margin-top: 15px;
+    margin-top: 15px;
     display: flex;
     justify-content: center;
 }
@@ -56,11 +53,10 @@ body{
     margin: 0 20px;
     background:rgba(224, 225, 240, 0.59);
 }
-#login input::-webkit-input-placeholder{
-    color: rgb(139, 138, 138);
-}
 #content_right i{
     font-size: 40px;
+    color: rgb(29, 161, 242);
+    
 }
 #content_right{
     height:400px;
@@ -68,7 +64,11 @@ body{
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
-    padding: 30px 150px
+    padding: 30px 150px;
+    margin-top: 20px
+}
+#content_right h1{
+    font-size:32px;
 }
 #content_right p{
     font-weight: bold;
@@ -103,12 +103,7 @@ body{
         font-weight: bold;
         margin-top: 15px;
 }
-#right i{
-    color: rgb(29, 161, 242);
-}
 #links{
-  float: left;
-  margin-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -131,9 +126,8 @@ body{
   text-decoration: underline;
 }
 #copyright{
-  float: left;
   color: #867f7f;
-  width: 100%;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
